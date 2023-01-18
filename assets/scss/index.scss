@@ -1,0 +1,24 @@
+@import "colors", "fonts", "buttons";
+
+// Reset body
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Normalize css
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+

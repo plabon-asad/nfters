@@ -1,0 +1,28 @@
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    color: white;
+    border: 1px solid $primary;
+    background-color: $primary;
+    &:hover {
+        background-color: darken($color: $primary, $amount: 10);
+    }
+}
+
+.outline {
+    background-color: transparent;
+    color: $primary;
+    &:hover {
+        background-color: darken($color: $primary, $amount: 10);
+        color: white;
+    }
+}
+
+// Search bar
+
+

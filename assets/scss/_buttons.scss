@@ -3,22 +3,24 @@
     padding: 10px 20px;
     border-radius: 60px;
     transition: 0.3s;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .btn-primary {
     color: white;
-    border: 1px solid $primary;
-    background-color: $primary;
+    border: 1px solid $primaryColor;
+    background-color: $primaryColor;
     &:hover {
-        background-color: darken($color: $primary, $amount: 10);
+        background-color: darken($color: $primaryColor, $amount: 10);
     }
 }
 
 .outline {
     background-color: transparent;
-    color: $primary;
+    color: $primaryColor;
     &:hover {
-        background-color: darken($color: $primary, $amount: 10);
+        background-color: darken($color: $primaryColor, $amount: 10);
         color: white;
     }
 }

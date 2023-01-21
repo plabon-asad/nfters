@@ -1,0 +1,28 @@
+// Reset body
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    // Body text
+    font-family: $primaryFont;
+}
+
+// Normalize css
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input::placeholder {
+    color: darken($color: $grayColor, $amount: 10);
+}

@@ -5,11 +5,12 @@
                 <div class="logo">
                     <img src="~/assets/img/logo.png" alt="Logo">
                 </div>
-                <ul class="links">
+                <ul class="links flex-lg-gap">
                     <li><a href="">Marketplace</a></li>
                     <li><a href="">Resource</a></li>
                     <li><a href="">About</a></li>
-
+                </ul>
+                <ul class="links flex-sm-gap btn-links">
                     <li>
                         <div class="search-with-icon">
                             <form action="">
@@ -26,19 +27,22 @@
                             </form>
 
                         </div>
-
                     </li>
-                    <li><a href="" class="btn btn-primary">Upload</a></li>
-                    <li><a href="" class="btn btn-primary outline">Connect Wallet</a></li>
+                    <li>
+                        <a href="" class="btn btn-primary">Upload</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-primary outline">Connect Wallet</a>
+                    </li>
                 </ul>
+
+                <!-- Mobile menu -->
                 <a href="" class="mobile-menu">
                     <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line y1="1" x2="30" y2="1" stroke="#3D00B7" stroke-width="2" />
                         <line y1="11" x2="15" y2="11" stroke="#3D00B7" stroke-width="2" />
                         <line y1="21" x2="25" y2="21" stroke="#3D00B7" stroke-width="2" />
                     </svg>
-
-
                 </a>
 
             </nav>
@@ -48,7 +52,10 @@
 </template>
 
 <style lang="scss" scoped>
-header {border-bottom: 1px solid $grayColor;}
+header {
+    border-bottom: 1px solid $grayColor;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -74,7 +81,6 @@ nav {
 
 .links {
     display: flex;
-    gap: 1em;
     align-items: center;
 }
 
@@ -93,6 +99,7 @@ nav {
             border: 1px solid $grayColor;
             border-radius: 60px;
             display: inline-block;
+            min-width: 300px;
             transition: 0.3s;
 
             &:focus-visible {
@@ -113,14 +120,11 @@ nav {
 // Mobile menu
 .mobile-menu {
     display: none;
+    transition: 0.3s;
 }
 
 // Responsive code
-@media screen and (max-width: 900px) {
-    nav {
-        height: 40px;
-    }
-
+@media screen and (max-width: 1160px) {
     .links {
         display: none;
 
@@ -131,13 +135,6 @@ nav {
         }
     }
 
-    .mobile-menu {
-        display: block;
-    }
-
-    // 
-
-
-
+    .mobile-menu {display: block;}
 }
 </style>

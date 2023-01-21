@@ -31,4 +31,10 @@ input::placeholder {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+
+    // Responsive
+    @media screen and (max-width: 1160px) {padding: 0 1em;}
 }
+
+.flex-lg-gap {gap: 3em;}
+.flex-sm-gap {gap: 1.5em;}

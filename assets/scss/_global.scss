@@ -26,3 +26,9 @@ ul {
 input::placeholder {
     color: darken($color: $grayColor, $amount: 10);
 }
+
+// Global class
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}

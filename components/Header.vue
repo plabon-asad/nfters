@@ -3,7 +3,9 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="~/assets/img/logo.png" alt="Logo">
+                    <a href="#">
+                        <img src="~/assets/img/logo.png" alt="Logo">
+                    </a>
                 </div>
                 <ul class="links flex-lg-gap">
                     <li><a href="">Marketplace</a></li>
@@ -135,6 +137,8 @@ nav {
         }
     }
 
-    .mobile-menu {display: block;}
+    .mobile-menu {
+        display: block;
+    }
 }
 </style>

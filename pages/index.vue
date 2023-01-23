@@ -1,5 +1,8 @@
 <template>
-    <!-- Main Navbar -->
+    <!-- Navbar -->
     <Header />
+
+    <!-- Slider -->
+    <Slider />
     
 </template>

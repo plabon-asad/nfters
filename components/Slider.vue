@@ -26,7 +26,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="~/assets/img/badge.png" alt="">
+                        <!-- <img src="~/assets/img/badge.png" alt=""> -->
                         <div class="content">
                             <h4 class="title">Plabon Asad</h4>
                             <ul>
@@ -75,44 +75,65 @@
 
 <style lang="scss" scoped>
 .card {
-    background-image: url("~/assets/img/card1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url("~/assets/img/card1.png");
+    width: 400px;
+    height: 440px;
+    background: $darkGray;
+    border-radius: 24px;
+    padding: 26px;
+    color: white;
 }
 
 .main-slider {
-    h1 {
-        font-weight: bold;
-        font-size: 40px;
-        text-transform: uppercase;
-        margin-bottom: 22px;
-    }
+    .left-content {
+        position: relative;
 
-    p {
-        margin-bottom: 40px;
-        color: $darkGray;
-        font-size: 20px;
-        font-weight: 400;
-    }
+        &:before {
+            position: absolute;
+            content: "";
+            width: 196px;
+            height: 154px;
+            bottom: 0;
+            left: -50px;
+            background-image: url('~/assets/img/dots.png');
+            z-index: -1;
+        }
 
-    ul.links {
-        display: flex;
-        gap: 1em;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
 
-        li {
-            strong {
-                font-size: 40px;
-                font-weight: 700;
-            }
+        p {
+            margin-bottom: 40px;
+            color: $darkGray;
+            font-size: 20px;
+            font-weight: 400;
+        }
 
-            span {
-                font-size: 20px;
-                font-weight: 400;
-                color: $darkGray;
+        ul.links {
+            display: flex;
+            gap: 1em;
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+            li {
+                strong {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $darkGray;
+                }
             }
         }
+
     }
+
 }
 </style>

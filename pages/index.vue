@@ -4,5 +4,8 @@
 
     <!-- Slider -->
     <Slider />
+
+    <!-- Transaction -->
+    <Transaction />
     
 </template>

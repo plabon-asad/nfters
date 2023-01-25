@@ -27,6 +27,8 @@ input::placeholder {
     color: darken($color: $grayColor, $amount: 10);
 }
 
+img {max-width: 100%;}
+
 // Global class
 .container {
     max-width: 1140px;
@@ -46,7 +48,7 @@ input::placeholder {
     gap: 1.5em;
 }
 
-// Flex grid system
+// Flex grid system 2 items
 .row {
     display: flex;
     flex-direction: row;
@@ -61,6 +63,23 @@ input::placeholder {
         width: 100%;
     }
 }
+
+// Flex 3 columns grid
+.cols-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1em;
+    @media (min-width: 48em) {
+        flex-wrap: nowrap;
+    }
+    .col-item {
+        width: 100%;
+        min-height: 200px;
+        border: 1px solid tomato;
+      }
+  }
 
 // Section spacing
 .spacing-y {

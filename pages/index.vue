@@ -7,5 +7,8 @@
 
     <!-- Transaction -->
     <Transaction />
+
+    <!-- TopCollections -->
+    <TopCollections />
     
 </template>
